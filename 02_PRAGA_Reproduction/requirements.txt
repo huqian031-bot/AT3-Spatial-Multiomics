@@ -1,0 +1,14 @@
+# PRAGA 复现环境（Kaggle GPU）
+# Python：本次运行记录为 3.13.16
+# PyTorch：Kaggle GPU 镜像已预装 2.11.0+cu130；不要用本文件覆盖 CUDA 版本。
+scanpy==1.12.5
+anndata==0.13.4
+rpy2==3.5.17
+scikit-misc
+tqdm
+seaborn
+matplotlib
+scikit-learn
+
+# 另需 R 环境及 R 包 mclust==6.1。
+# Notebook 中的环境配置单元会检查 Rscript，并安装/固定 mclust 版本。
