@@ -1,0 +1,46 @@
+{
+  "项目名称": "空间多组学文献整理 Agent",
+  "Agent": "Python 本地工具调用 Agent",
+  "运行方式": "本地工具循环；按任务步骤调用检索、读取、综合和写作工具",
+  "运行时间UTC": "2026-11-20T05:33:43.964985+00:00",
+  "Python版本": "3.13.5",
+  "操作系统": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "外部网络调用": false,
+  "外部模型API": false,
+  "GPU要求": false,
+  "来源文件SHA256": {
+    "source_package/PRAGA_2025.md": "b4daead5e7dfda9e8b5c75bdfef7f329eb9ff0279fa72acd9dfad60548604def",
+    "source_package/SpatialGlue_2024.md": "3ee2366953cd73e792fd897887892115b677145c160bc459219fbad4700aaf1b",
+    "source_package/COSMOS_2025.md": "bb77013f8d8dfce384ade157f96a4fef7497e00483782764c878edbdc4405235"
+  },
+  "实验设置": {
+    "变量": "max_steps",
+    "条件": [
+      3,
+      6
+    ],
+    "其他条件": "保持一致"
+  },
+  "实验结果": [
+    {
+      "实验组": "max_steps_3",
+      "max_steps": 3,
+      "工具调用次数": 3,
+      "检索到的来源数": 3,
+      "实际读取来源数": 2,
+      "是否生成简报": false,
+      "校验是否通过": false,
+      "任务状态": "未完成"
+    },
+    {
+      "实验组": "max_steps_6",
+      "max_steps": 6,
+      "工具调用次数": 6,
+      "检索到的来源数": 3,
+      "实际读取来源数": 3,
+      "是否生成简报": true,
+      "校验是否通过": true,
+      "任务状态": "完成"
+    }
+  ]
+}

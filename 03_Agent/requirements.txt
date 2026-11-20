@@ -1,0 +1,12 @@
+# Python 环境：3.13.16
+# Kaggle GPU 环境中已预装 PyTorch 2.11.0+cu130，本文件不覆盖该 CUDA 版本。
+scanpy==1.12.5
+anndata==0.13.4
+rpy2==3.5.17
+scikit-misc
+tqdm
+seaborn
+matplotlib
+scikit-learn
+
+# 另需在 R 环境中安装 mclust 6.1；R 包不属于 pip requirements。

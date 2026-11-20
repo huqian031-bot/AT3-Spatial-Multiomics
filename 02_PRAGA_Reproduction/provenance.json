@@ -1,0 +1,39 @@
+{
+  "paper": "PRAGA, AAAI 2025, DOI 10.1609/aaai.v39i1.32010",
+  "repository": "https://github.com/Xubin-s-Lab/PRAGA",
+  "repository_commit": "4adb11c96fc7ddad800fa1787eadcc8b91b42784",
+  "dataset": "PRAGA Zenodo Data.zip, record 14591305",
+  "dataset_md5": "25cdaef517bd2760ddbd406b2fab0afc",
+  "dataset_sample": "Human Lymph Node (RNA+ADT)",
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "mclust_version": "6.1",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "parameters": {
+    "data_type": "10x",
+    "n_clusters": 10,
+    "init_k": 10,
+    "KNN_k": 20,
+    "RNA_weight": 5,
+    "ADT_weight": 5,
+    "epochs": 30,
+    "training_seed": 2024,
+    "mclust_seed": 2020
+  },
+  "compatibility_patches": [
+    "passed trailing slash on --file_fold path",
+    "PRAGA/PRAGA/preprocess.py sparse conversion adata.X.A -> adata.X.toarray() for SciPy compatibility",
+    "main.py aliases the Simulation-only construct_neighbor_graph import to avoid shadowing the 10x graph function",
+    "R mclust pinned from 6.1.3 to archived CRAN 6.1 after the 6.1.3 EEE readout dimnames error",
+    "metric.py replaces the removed AnnData internal type ad._core.sparse_dataset.SparseDataset with public ad.abc.CSRDataset and ad.abc.CSCDataset for the official metric helper"
+  ],
+  "metrics": {
+    "ARI": 0.260940013960164,
+    "NMI_arithmetic": 0.3703457230846045
+  },
+  "elapsed_seconds": 127.45818257331848,
+  "anndata_version": "0.13.4",
+  "gpu_count": 2,
+  "training_device": "cuda:1 (Tesla T4; confirmed by training log)",
+  "device_note": "本次 Kaggle 环境检测到两张 Tesla T4；训练日志显示模型运行在 cuda:1，本次未执行 cuda:1 到 cuda:0 的设备索引修改。"
+}
