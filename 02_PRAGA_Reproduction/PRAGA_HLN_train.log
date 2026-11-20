@@ -1,58 +1,0 @@
-/kaggle/working/PRAGA_AT3/PRAGA/main.py:26: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
-  adata_omics1 = sc.read_h5ad(args.file_fold + 'adata_RNA.h5ad')
-/kaggle/working/PRAGA_AT3/PRAGA/main.py:27: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
-  adata_omics2 = sc.read_h5ad(args.file_fold + 'adata_ADT.h5ad')
-/usr/lib/python3.13/functools.py:934: UserWarning: zero-centering a sparse array/matrix densifies it.
-  return dispatch(args[0].__class__)(*args, **kw)
-/kaggle/working/PRAGA_AT3/PRAGA/PRAGA/preprocess.py:140: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:654.)
-  return torch.sparse.FloatTensor(indices, values, shape)
-  0%|          | 0/30 [00:00<?, ?it/s]/kaggle/working/PRAGA_AT3/PRAGA/PRAGA/Train_model.py:107: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
-  scaler = torch.cuda.amp.GradScaler()
-/kaggle/working/PRAGA_AT3/PRAGA/PRAGA/Train_model.py:108: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
-  with autocast():
-  3%|▎         | 1/30 [00:11<05:41, 11.78s/it]  7%|▋         | 2/30 [00:12<02:24,  5.16s/it] 10%|█         | 3/30 [00:12<01:21,  3.01s/it] 13%|█▎        | 4/30 [00:13<00:51,  2.00s/it] 17%|█▋        | 5/30 [00:13<00:35,  1.44s/it] 20%|██        | 6/30 [00:14<00:26,  1.09s/it] 23%|██▎       | 7/30 [00:14<00:20,  1.14it/s] 27%|██▋       | 8/30 [00:14<00:16,  1.35it/s] 30%|███       | 9/30 [00:15<00:13,  1.54it/s] 33%|███▎      | 10/30 [00:15<00:11,  1.70it/s] 37%|███▋      | 11/30 [00:16<00:10,  1.84it/s] 40%|████      | 12/30 [00:16<00:09,  1.95it/s] 43%|████▎     | 13/30 [00:17<00:08,  2.03it/s] 47%|████▋     | 14/30 [00:17<00:07,  2.09it/s] 50%|█████     | 15/30 [00:18<00:07,  2.13it/s] 53%|█████▎    | 16/30 [00:18<00:06,  2.17it/s] 57%|█████▋    | 17/30 [00:18<00:05,  2.19it/s] 60%|██████    | 18/30 [00:19<00:05,  2.20it/s] 63%|██████▎   | 19/30 [00:19<00:04,  2.21it/s] 67%|██████▋   | 20/30 [00:20<00:04,  2.22it/s] 70%|███████   | 21/30 [00:20<00:04,  2.23it/s] 73%|███████▎  | 22/30 [00:21<00:03,  2.23it/s] 77%|███████▋  | 23/30 [00:21<00:03,  2.24it/s] 80%|████████  | 24/30 [00:22<00:02,  2.23it/s] 83%|████████▎ | 25/30 [00:22<00:02,  2.22it/s] 87%|████████▋ | 26/30 [00:22<00:01,  2.22it/s] 90%|█████████ | 27/30 [00:23<00:01,  2.22it/s] 93%|█████████▎| 28/30 [00:23<00:00,  2.23it/s] 97%|█████████▋| 29/30 [00:24<00:00,  2.23it/s]100%|██████████| 30/30 [00:24<00:00,  2.23it/s]100%|██████████| 30/30 [00:24<00:00,  1.21it/s]
-R[write to console]:                    __           __ 
-   ____ ___  _____/ /_  _______/ /_
-  / __ `__ \/ ___/ / / / / ___/ __/
- / / / / / / /__/ / /_/ (__  ) /_  
-/_/ /_/ /_/\___/_/\__,_/____/\__/   version 6.1
-Type 'citation("mclust")' for citing this R package in publications.
-
-tensor(40.7706, device='cuda:1', grad_fn=<AddBackward0>) tensor(27.6525, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(39.5872, device='cuda:1', grad_fn=<AddBackward0>) tensor(24.8771, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(38.0133, device='cuda:1', grad_fn=<AddBackward0>) tensor(22.3703, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(36.2919, device='cuda:1', grad_fn=<AddBackward0>) tensor(20.1062, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(33.6532, device='cuda:1', grad_fn=<AddBackward0>) tensor(18.0615, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(30.7342, device='cuda:1', grad_fn=<AddBackward0>) tensor(16.2146, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(29.8222, device='cuda:1', grad_fn=<AddBackward0>) tensor(14.5468, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(26.2190, device='cuda:1', grad_fn=<AddBackward0>) tensor(13.0409, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(26.8510, device='cuda:1', grad_fn=<AddBackward0>) tensor(11.6807, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(25.5250, device='cuda:1', grad_fn=<AddBackward0>) tensor(10.4535, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(25.4139, device='cuda:1', grad_fn=<AddBackward0>) tensor(9.3454, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(24.5149, device='cuda:1', grad_fn=<AddBackward0>) tensor(8.3452, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(24.4922, device='cuda:1', grad_fn=<AddBackward0>) tensor(7.4427, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(24.0625, device='cuda:1', grad_fn=<AddBackward0>) tensor(6.6289, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(23.0605, device='cuda:1', grad_fn=<AddBackward0>) tensor(5.8942, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(22.7690, device='cuda:1', grad_fn=<AddBackward0>) tensor(5.2319, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(22.4731, device='cuda:1', grad_fn=<AddBackward0>) tensor(4.6348, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(22.0517, device='cuda:1', grad_fn=<AddBackward0>) tensor(4.0965, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.8108, device='cuda:1', grad_fn=<AddBackward0>) tensor(3.6115, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.4739, device='cuda:1', grad_fn=<AddBackward0>) tensor(3.1747, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.2669, device='cuda:1', grad_fn=<AddBackward0>) tensor(2.7811, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.2285, device='cuda:1', grad_fn=<AddBackward0>) tensor(2.4273, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.1603, device='cuda:1', grad_fn=<AddBackward0>) tensor(2.1090, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(21.0312, device='cuda:1', grad_fn=<AddBackward0>) tensor(1.8228, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(20.7047, device='cuda:1', grad_fn=<AddBackward0>) tensor(1.5663, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(20.4839, device='cuda:1', grad_fn=<AddBackward0>) tensor(1.3355, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(20.3825, device='cuda:1', grad_fn=<AddBackward0>) tensor(1.1290, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(20.2510, device='cuda:1', grad_fn=<AddBackward0>) tensor(0.9443, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(20.1070, device='cuda:1', grad_fn=<AddBackward0>) tensor(0.7791, device='cuda:1', grad_fn=<DivBackward0>) 0
-tensor(19.9739, device='cuda:1', grad_fn=<AddBackward0>) tensor(0.6327, device='cuda:1', grad_fn=<DivBackward0>) 0
-Model training finished!
-
-Infer time:  0.01540517807006836
-Training time:  29.153146982192993
-fitting ...
-  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
-WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-I0000 00:00:1793722777.720444     310 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
